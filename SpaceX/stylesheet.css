@@ -27,12 +27,13 @@ body {
 	display: grid;
 	grid-column: 1/5;
 	/*grid-area: header;*/
-
+	/*display: block;*/
 	position: relative;
+	position: left;
 	z-index: 777;
 	width: 100%;
-	margin: 20px auto;
-	padding: 10px;
+	margin: 5px auto;
+	padding: 5px;
 	background: #324048;
 	box-sizing: border-box;
 	border-radius: 4px;
@@ -46,17 +47,17 @@ body {
 	height: 60px;
 	font-size: 36px;
 	line-height: 60px;
-	padding: 0 20px;
+	/*padding-right: 0;*/
 	text-align: center;
 	box-sizing: border-box;
 	float: left;
-	font-weight: 500;
+	font-weight: 400;
 	text-decoration: none;
 }
 
 nav {
 	display: grid;
-	grid-column: 2/5;
+	grid-column: 3/5;
 	float: right;
 
 	text-align: left;
@@ -69,10 +70,12 @@ nav {
 }
 
 nav ul {
-	margin: 0;
+	margin: 10px;
 	padding: 0;
 	display: ;
 	display: flex;
+	position: absolute;
+	right: 20px;
 }
 
 nav ul li {
@@ -91,14 +94,20 @@ nav ul li a.active,
 nav ul li a:hover {
 	color: #426A5A;
 	transition: 0.5s;
+	font-weight: 800;
 }
 
 .title {
 	display: grid;
 	grid-column: 1/5;
-	height: 100px;
+	/*height: 100px;*/
 	text-align: center;
 	/*grid-area: title;*/
+}
+
+.responsive {
+	width: 100%;
+	height: 300px;
 }
 
 .statone {
@@ -155,19 +164,30 @@ nav ul li a:hover {
 	grid-column: 3/5;
 }
 
-@media only screen and (max-width: 300px) {
+.logofoot {
+	position: absolute;
+	right: 30px;
+}
+
+@media only screen and (max-width: 360px) {
 	.wrapper {
 		margin: 0 0 auto;
 	}
+	.aside {
+		display: none;
+	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.wrapper {
 
 	}
 
 
 	.menu-toggle {
+		display: grid;
+		grid-column: 4/5;
+
 		display: block;
 		width: 40px;
 		height: 40px;
@@ -207,28 +227,62 @@ nav ul li a:hover {
 		margin: 0;
 	}
 
+	.aside {
+		display: none;
+	}
 }
 
-@media only screen and (max-width: 800px) {
-	
+/*@media only screen and (m-width: 800px) {
+	.logo{
+		display: grid;
+		grid-column: 1/2;
+	}
+
+	.nav {
+		display: grid;
+		grid-column: 3/5;
+	}
+}*/
+
+@media only screen and (min-width: 701px) {
+	.logo {
+		display: grid;
+		grid-column: 1/2;
+	}
+
+	.nav {
+		display: grid;
+		grid-column: 2/5;
+	}
+
+	.aside {
+		display: none;
+	}
 }
 
-@media only screen and (max-width: 1000px) {
-	
+
+@media only screen and (min-width: 800px) {
+	.statthree {
+		display: grid;
+		grid-column: 1/4;
+	}
+	.aside {
+		display: grid;
+		grid-column: 4/5;
+	}
 }
 
 
-
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1000px) {
 	.wrapper {
 
-		grid-template-areas: 
+		/*grid-template-areas: 
 			'header header header header'
 			'title title title title'
 			'statone statone statone statone'
 			'stattwo stattwo statthree statthree'
 			'footer footer footer footer';
-	}
+	}*/
 	header {
 		margin: 10px;
 	}
