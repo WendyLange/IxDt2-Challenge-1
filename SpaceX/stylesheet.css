@@ -144,7 +144,12 @@ nav ul li a:hover {
 	/*grid-area: aside;*/
 	margin: .1em;
 	height: 20px;
-
+	background-image: url('images/astronaut.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 50vh;
+	-webkit-clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+	clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
 .footer {
@@ -152,7 +157,13 @@ nav ul li a:hover {
 	grid-column: 1/5;
 	/*grid-area: footer;*/
 	background-color: #324048;
-	height: 100px;
+	/*height: 100px;*/
+	border-radius: 4px;
+}
+
+.footer p {
+	color: #7B9AA0;
+	margin: 5px;
 }
 
 .footleft {
