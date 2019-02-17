@@ -1,5 +1,6 @@
 * {
 	font-family: roboto mono, arial, helvetica;	
+	text-transform: uppercase;
 }
 
 body {
@@ -157,11 +158,13 @@ nav ul li a:hover {
 .footleft {
 	display: grid;
 	grid-column: 1/3;
+	padding: 10px;
 }
 
 .footright {
 	display: grid;
 	grid-column: 3/5;
+	padding: 10px;
 }
 
 .logofoot {
@@ -262,6 +265,16 @@ nav ul li a:hover {
 
 
 @media only screen and (min-width: 800px) {
+	.statone {
+		display: grid;
+		grid-column: 1/3;
+	}
+
+	.stattwo {
+		display: grid;
+		grid-column: 3/5;
+	}
+
 	.statthree {
 		display: grid;
 		grid-column: 1/4;
@@ -270,20 +283,18 @@ nav ul li a:hover {
 		display: grid;
 		grid-column: 4/5;
 	}
+
 }
 
 
 @media only screen and (min-width: 1000px) {
 	.wrapper {
+ 		padding: 100px;
+ 	}
 
-		/*grid-template-areas: 
-			'header header header header'
-			'title title title title'
-			'statone statone statone statone'
-			'stattwo stattwo statthree statthree'
-			'footer footer footer footer';
-	}*/
-	header {
+ 	header {
 		margin: 10px;
 	}
+
+	
 }

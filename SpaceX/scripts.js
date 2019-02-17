@@ -37,12 +37,12 @@ var chart1 = new CanvasJS.Chart("chartReserves", {
 		xValueFormatString: "MMM, YYYY",
 		color: "#F08080",
 		dataPoints: [
-			{ x: new Date(2031, 0), y: 650 },
-			{ x: new Date(2031, 6), y: 700 },
-			{ x: new Date(2032, 0), y: 710 },
-			{ x: new Date(2032, 6), y: 658 },
+			{ x: new Date(2031, 0), y: 800 },
+			{ x: new Date(2031, 6), y: 780 },
+			{ x: new Date(2032, 0), y: 720 },
+			{ x: new Date(2032, 6), y: 688 },
 			{ x: new Date(2033, 0), y: 734 },
-			{ x: new Date(2033, 6), y: 963 },
+			{ x: new Date(2033, 6), y: 863 },
 			{ x: new Date(2034, 0), y: 847 },
 			{ x: new Date(2034, 6), y: 853 },
 			{ x: new Date(2035, 0), y: 869 },
@@ -59,10 +59,10 @@ var chart1 = new CanvasJS.Chart("chartReserves", {
 		name: "Water",
 		lineDashType: "dash",
 		dataPoints: [
-			{ x: new Date(2031, 0), y: 510 },
-			{ x: new Date(2031, 6), y: 560 },
-			{ x: new Date(2032, 0), y: 540 },
-			{ x: new Date(2032, 6), y: 558 },
+			{ x: new Date(2031, 0), y: 710 },
+			{ x: new Date(2031, 6), y: 680 },
+			{ x: new Date(2032, 0), y: 640 },
+			{ x: new Date(2032, 6), y: 600 },
 			{ x: new Date(2033, 0), y: 544 },
 			{ x: new Date(2033, 6), y: 693 },
 			{ x: new Date(2034, 0), y: 657 },
@@ -72,7 +72,7 @@ var chart1 = new CanvasJS.Chart("chartReserves", {
 			{ x: new Date(2036, 0), y: 660 },
 			{ x: new Date(2036, 6), y: 562 },
 			{ x: new Date(2037, 0), y: 643 },
-			{ x: new Date(2037, 6), y: 570 }
+			{ x: new Date(2037, 6), y: 670 }
 		]
 	}]
 });
@@ -112,9 +112,9 @@ chart1.render();
 			indexLabel: "{name} - #percent%",
 			dataPoints: [
 				{ y: 450, name: "Men" },
-				{ y: 120, name: "Women" },
-				{ y: 800, name: "Housing" },
-				{ y: 250, name: "Others" }
+				{ y: 500, name: "Women" },
+				{ y: 300, name: "Plants" },
+				{ y: 150, name: "Other" }
 			]
 		}]
 	});
@@ -135,7 +135,7 @@ var chart3 = new CanvasJS.Chart("chartCol", {
 	animationEnabled: true,
 	theme: "light2", //"light1", "dark1", "dark2"
 	title:{
-		text: "Division of Products Sold in 2nd Quarter"             
+		text: "Division of Products used"             
 	},
 	axisY:{
 		interval: 10,
@@ -148,45 +148,39 @@ var chart3 = new CanvasJS.Chart("chartCol", {
 		type: "stackedBar100",
 		toolTipContent: "{label}<br><b>{name}:</b> {y} (#percent%)",
 		showInLegend: true, 
-		name: "April",
+		name: "2031",
 		dataPoints: [
-			{ y: 600, label: "Water Filter" },
-			{ y: 400, label: "Modern Chair" },
-			{ y: 120, label: "VOIP Phone" },
-			{ y: 250, label: "Microwave" },
-			{ y: 120, label: "Water Filter" },
-			{ y: 374, label: "Expresso Machine" },
-			{ y: 350, label: "Lobby Chair" }
+			{ y: 200, label: "Water Filter" },
+			{ y: 300, label: "memory cards" },
+			{ y: 100, label: "Transmitors" },
+			{ y: 400, label: "Lab equipment" },
+			{ y: 120, label: "EHBO equipment" }
 		]
 		},
 		{
 			type: "stackedBar100",
 			toolTipContent: "<b>{name}:</b> {y} (#percent%)",
 			showInLegend: true, 
-			name: "May",
+			name: "2032",
 			dataPoints: [
-				{ y: 400, label: "Water Filter" },
-				{ y: 500, label: "Modern Chair" },
-				{ y: 220, label: "VOIP Phone" },
-				{ y: 350, label: "Microwave" },
-				{ y: 220, label: "Water Filter" },
-				{ y: 474, label: "Expresso Machine" },
-				{ y: 450, label: "Lobby Chair" }
+				{ y: 500, label: "Water Filter" },
+				{ y: 500, label: "Memory cards" },
+				{ y: 320, label: "Transmitors" },
+				{ y: 280, label: "Lab equipment" },
+				{ y: 220, label: "EHBO equipment" }
 			]
 		}, 
 		{
 			type: "stackedBar100",
 			toolTipContent: "<b>{name}:</b> {y} (#percent%)",
 			showInLegend: true, 
-			name: "June",
+			name: "2033",
 			dataPoints: [
 				{ y: 300, label: "Water Filter" },
-				{ y: 610, label: "Modern Chair" },
-				{ y: 215, label: "VOIP Phone" },
-				{ y: 221, label: "Microwave" },
-				{ y: 75, label: "Water Filter" },
-				{ y: 310, label: "Expresso Machine" },
-				{ y: 340, label: "Lobby Chair" }
+				{ y: 610, label: "Memory cards" },
+				{ y: 450, label: "Transmitors" },
+				{ y: 221, label: "Lab equipment" },
+				{ y: 75, label: "EHBO equipment" }
 			]
 	}]
 });
