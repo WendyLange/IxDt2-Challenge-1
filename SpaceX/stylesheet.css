@@ -145,6 +145,16 @@ nav ul li a:hover {
 	height: 100px;
 }
 
+.footleft {
+	display: grid;
+	grid-column: 1/3;
+}
+
+.footright {
+	display: grid;
+	grid-column: 3/5;
+}
+
 @media only screen and (max-width: 300px) {
 	.wrapper {
 		margin: 0 0 auto;
