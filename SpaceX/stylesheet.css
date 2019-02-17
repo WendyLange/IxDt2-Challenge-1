@@ -44,17 +44,19 @@ body {
 .logo {
 	display: grid;
 	grid-column: 1/2;
-	color: #7B9AA0;
-	height: 60px;
-	font-size: 36px;
-	line-height: 60px;
+	/*color: #7B9AA0;*/
+	height: 40px;
+	/*font-size: 36px;
+	line-height: 60px;*/
 	/*padding-right: 0;*/
 	text-align: center;
 	box-sizing: border-box;
 	float: left;
-	font-weight: 400;
+	width: 180px;
+	padding: 5px;
+	/*font-weight: 400;
 	text-decoration: none;
-}
+*/}
 
 nav {
 	display: grid;
@@ -76,7 +78,7 @@ nav ul {
 	display: ;
 	display: flex;
 	position: absolute;
-	right: 20px;
+	right: 10px;
 }
 
 nav ul li {
@@ -85,8 +87,8 @@ nav ul li {
  
 nav ul li a {
 	display: block;
-	margin: 10px 0;
-	padding: 10px 20px;
+	margin: 5px 0;
+	padding: 10px 10px;
 	text-decoration: none;
 	color: #7B9AA0;
 }
@@ -175,12 +177,21 @@ nav ul li a:hover {
 .footright {
 	display: grid;
 	grid-column: 3/5;
-	padding: 10px;
+	padding: 5px;
+
 }
 
 .logofoot {
-	position: absolute;
-	right: 30px;
+	display: grid;
+	grid-column: 3/5;
+	/*position: absolute;*/
+
+	box-sizing: border-box;
+	float: left;
+	height: 40px;
+	width: 180px;
+	padding: 5px;
+	margin-top: 20px;
 }
 
 @media only screen and (max-width: 360px) {
@@ -192,7 +203,7 @@ nav ul li a:hover {
 	}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 	.wrapper {
 
 	}
@@ -210,7 +221,7 @@ nav ul li a:hover {
 		cursor: pointer;
 		text-align: center;
 		font-size: 30px;
-		color: #069370;
+		color: #7B9AA0;
 	}
 
 	.menu-toggle:before {
@@ -246,19 +257,8 @@ nav ul li a:hover {
 	}
 }
 
-/*@media only screen and (m-width: 800px) {
-	.logo{
-		display: grid;
-		grid-column: 1/2;
-	}
 
-	.nav {
-		display: grid;
-		grid-column: 3/5;
-	}
-}*/
-
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 751px) {
 	.logo {
 		display: grid;
 		grid-column: 1/2;
@@ -276,6 +276,7 @@ nav ul li a:hover {
 
 
 @media only screen and (min-width: 800px) {
+
 	.statone {
 		display: grid;
 		grid-column: 1/3;
@@ -300,12 +301,21 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 1000px) {
 	.wrapper {
- 		padding: 100px;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+
+
+
+
+
+/*	.wrapper {
+ 		margin: 100px;
  	}
 
  	header {
 		margin: 10px;
 	}
-
+*/
 	
 }
