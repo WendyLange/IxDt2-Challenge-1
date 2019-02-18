@@ -98,7 +98,7 @@ chart1.render();
 		exportEnabled: false,
 		animationEnabled: true,
 		title:{
-			text: "Survivals"
+			text: "On board"
 		},
 		legend:{
 			cursor: "pointer",

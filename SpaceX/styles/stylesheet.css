@@ -147,7 +147,7 @@ nav ul li a:hover {
 	background-position: center;
 	background-size: cover;
 	height: 50vh;
-	-webkit-clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+	/*-webkit-clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);*/
 	clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
