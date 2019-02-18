@@ -2,9 +2,9 @@ window.onload = function () {
 
 var chart1 = new CanvasJS.Chart("chartReserves", {
 	animationEnabled: true,
-	theme: "light2",
+	theme: "dark2",
 	title:{
-		text: "Food reserves"
+		text: "Food reserves",
 	},
 	axisX:{
 		valueFormatString: "MMM YYYY",
@@ -27,7 +27,7 @@ var chart1 = new CanvasJS.Chart("chartReserves", {
 		verticalAlign: "bottom",
 		horizontalAlign: "left",
 		dockInsidePlotArea: true,
-		itemclick: toogleDataSeries
+		itemclick: toogleDataSeries,
 	},
 	data: [{
 		type: "line",
@@ -133,7 +133,8 @@ chart1.render();
 
 var chart3 = new CanvasJS.Chart("chartCol", {
 	animationEnabled: true,
-	theme: "light2", //"light1", "dark1", "dark2"
+	theme: "dark2", //"light1", "dark1", "dark2"
+
 	title:{
 		text: "Division of Products used"             
 	},
