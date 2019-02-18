@@ -95,7 +95,7 @@ chart1.render();
 	var chart2 = new CanvasJS.Chart("chartContainer", {
 		theme: "dark2",
 		exportFileName: "Doughnut Chart",
-		exportEnabled: true,
+		exportEnabled: false,
 		animationEnabled: true,
 		title:{
 			text: "Survivals"
