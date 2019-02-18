@@ -116,37 +116,34 @@ nav ul li a:hover {
 .statone {
 	display: grid;
 	grid-column: 1/5;
-	/*grid-area: statone;*/
 	margin: .1em;
-/*	height: 300px;*/
 
 }
 
 .stattwo {
 	display: grid;
 	grid-column: 1/5;
-	/*grid-area: stattwo;*/
 	margin: .1em;
-	/*height: 300px;*/
 
 }
 
 .statthree {
 	display: grid;
 	grid-column: 1/5;
-	/*grid-area: statthree;*/
 	margin: .1em;
-/*	height: 300px;*/
 
 }
 
 .aside {
 	display: grid;
 	grid-column: 1/5;
-	/*grid-area: aside;*/
 	margin: .1em;
 	height: 20px;
-	background-image: url('images/astronaut.jpg');
+	/*background-image: url('images/naut.jpg');*/
+
+}
+
+.aside img {
 	background-position: center;
 	background-size: cover;
 	height: 50vh;
@@ -157,9 +154,7 @@ nav ul li a:hover {
 .footer {
 	display: grid;
 	grid-column: 1/5;
-	/*grid-area: footer;*/
 	background-color: #324048;
-	/*height: 100px;*/
 	border-radius: 4px;
 }
 
